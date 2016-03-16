@@ -23,7 +23,10 @@ int main(void) {
   printf("C: value %d, class %d \n", get_value(&C), get_class(&C));
 
   add(&A, &B, &C);
-  printf("C: value %d, class %d \n", get_value(&C), get_class(&C));
+  printf("After addition C: value %d, class %d \n", get_value(&C), get_class(&C));
+  multiply(&A, &B, &C);
+  printf("After multiplication C: value %d, class %d \n", get_value(&C), get_class(&C));
+
 
   return 0;
 }

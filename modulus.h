@@ -6,13 +6,13 @@ typedef struct Moduli {
   int class;
 } Modulus;
 
-int set_valor(Modulus *, int);
-int simplify_value(int, int);
-int get_value(Modulus *);
-int get_class(Modulus *);
+int set_valor(Modulus *, int); //Done
+int simplify_value(int, int); //Done
+int get_value(Modulus *); //Done
+int get_class(Modulus *); //Done
 int create_modulus(Modulus*, int, int);
-int add(Modulus *, Modulus *, Modulus *);
-int multiply(Modulus *, Modulus *, Modulus *);
+int add(Modulus *, Modulus *, Modulus *); //Done
+int multiply(Modulus *, Modulus *, Modulus *); //Done
 int find_additive_inverse(Modulus *, Modulus *);
 int find_multiplicative_inverse(Modulus *, Modulus *);
 
