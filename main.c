@@ -1,29 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "modulo.h"
+#include "modulus.h"
 
-Modulo A;
-Modulo B;
-Modulo C;
+Modulus A;
+Modulus B;
+Modulus C;
 
 
 int main(void) {
-  A.clase = 6;
-  B.clase = 6;
-  C.clase = 6;
+  A.class = 6;
+  B.class = 6;
+  C.class = 6;
 
-  A.valor = 5;
-  B.valor = 3;
-  C.valor = 0;
+  A.value = 5;
+  B.value = 3;
+  C.value = 0;
 
 
 
-  printf("A: valor %d, clase %d \n", get_valor(&A), get_clase(&A));
-  printf("B: valor %d, clase %d \n", get_valor(&B), get_clase(&B));
-  printf("C: valor %d, clase %d \n", get_valor(&C), get_clase(&C));
+  printf("A: value %d, class %d \n", get_value(&A), get_class(&A));
+  printf("B: value %d, class %d \n", get_value(&B), get_class(&B));
+  printf("C: value %d, class %d \n", get_value(&C), get_class(&C));
 
-  sumar(&A, &B, &C);
-  printf("C: valor %d, clase %d \n", get_valor(&C), get_clase(&C));
+  add(&A, &B, &C);
+  printf("C: value %d, class %d \n", get_value(&C), get_class(&C));
 
   return 0;
 }
