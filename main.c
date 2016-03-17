@@ -8,12 +8,12 @@ Modulus C;
 
 
 int main(void) {
-  A.class = 6;
-  B.class = 6;
-  C.class = 6;
+  A.class = 7;
+  B.class = 7;
+  C.class = 7;
 
-  A.value = 5;
-  B.value = 3;
+  A.value = 4;
+  B.value = 6;
   C.value = 0;
 
 
@@ -26,6 +26,16 @@ int main(void) {
   printf("After addition C: value %d, class %d \n", get_value(&C), get_class(&C));
   multiply(&A, &B, &C);
   printf("After multiplication C: value %d, class %d \n", get_value(&C), get_class(&C));
+
+  find_additive_inverse(&A, &C);
+  printf("After find additive inverse of A: value %d, class %d \n", get_value(&C), get_class(&C));
+  find_additive_inverse(&B, &C);
+  printf("After find additive inverse of B: value %d, class %d \n", get_value(&C), get_class(&C));
+
+  find_multiplicative_inverse(&A, &C);
+  printf("After find multiplicative inverse of A: value %d, class %d \n", get_value(&C), get_class(&C));
+  find_multiplicative_inverse(&B, &C);
+  printf("After find multiplicative inverse of B: value %d, class %d \n", get_value(&C), get_class(&C));
 
 
   return 0;
